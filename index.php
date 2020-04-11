@@ -76,8 +76,8 @@
   <!-- /#wrapper -->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="bootstrap/jquery/jquery.min.js"></script>
-  <script src="bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Scripts -->
     <script>
