@@ -8,12 +8,12 @@
 
   <title>Censo</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
+  <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/login.css" rel="stylesheet"/>
+  <link href="css/general.css" rel="stylesheet"/>
+  <link rel="shortcut icon" type="image/png" href="img/sv.png" />
   <link href="css/simple-sidebar.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,13 +21,13 @@
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-dark border-right d-block" id="sidebar-wrapper">
-      <div class="sidebar-heading text-white">SV-SV</div>
+    <div class="bg-dark border-right d-block" id="sidebar-wrapper"> 
       <div class="list-group list-group-flush d-block">
-        <button class="list-group-item list-group-item-action bg-dark text-white" id="btPrincipal">Principal</a>
-        <button class="list-group-item list-group-item-action bg-dark text-white" id="btEstadisticas">Estadísticas</a>
-        <button class="list-group-item list-group-item-action bg-dark text-white" id="btResumen">Resumen</a>
+        <button class="list-group-item list-group-item-action bg-dark text-white" id="menu-toggle2" >&lt;</button>
         <button class="list-group-item list-group-item-action bg-dark text-white" id="btCenso">Censo</a>
+        <button class="list-group-item list-group-item-action bg-dark text-white" id="btInformacion">Información</a>
+        <button class="list-group-item list-group-item-action bg-dark text-white" id="btEstadisticas">Estadísticas</a>
+        <button class="list-group-item list-group-item-action bg-dark text-white" id="btFAQ">Preguntas frecuentes</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -37,9 +37,9 @@
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <button class="btn btn-light border-dark" id="menu-toggle" >&gt;</button>
-        <button class="btn btn-light border-dark" id="menu-toggle2" >&lt;</button>
 
-        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button id="btNav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -51,12 +51,14 @@
             <li class="nav-item">
               <button class="btn btn-light" id="btEstadisticas0">Estadísticas</a>
             </li>
+            <li>
+              <button class="btn btn-light" id="btLogin">Iniciar sesion</a>  
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Opciones
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Iniciar sesion</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">              
                 <a class="dropdown-item" href="#">Perfil</a>
                 <div class="dropdown-divider"></div>               
                 <a class="dropdown-item" href="#">Cerrar sesion</a>
@@ -66,7 +68,7 @@
         </div>
       </nav>
 
-      <div class="container-fluid" id="loader">
+      <div class="container-fluid loader" id="loader">
        
       </div>
     </div>
@@ -78,26 +80,21 @@
   <!-- Bootstrap core JavaScript -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Scripts -->
     <script>
     //incial
-      $("#menu-toggle2").hide(); 
       $("#loader").load("principal.php");
-
     //Eventos
     //toggle sidebar
       $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
-        $("#menu-toggle").hide();
-        $("#menu-toggle2").show();         
+        $("#menu-toggle").css("visibility", "hidden")
       });
       $("#menu-toggle2").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
-        $("#menu-toggle").show();
-        $("#menu-toggle2").hide(); 
+        $("#menu-toggle").css("visibility", "visible")
       });
 
       //principal
@@ -124,6 +121,12 @@
       $("#btCenso").click(function(e)
       {
         $("#loader").load("censo.php");
+      });
+
+      //login
+      $("#btLogin").click(function(e)
+      {
+        $("#loader").load("login.php");
       });
     </script>
 

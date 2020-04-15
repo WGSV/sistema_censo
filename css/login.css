@@ -1,0 +1,62 @@
+.login-container{
+    padding-top: 4%;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 300px;
+    height: auto;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+    height: 75px;
+}
+.fa {
+    color: ivory;
+    padding: 5px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+.login-form{
+    padding: 9%;
+    background:#282726;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+}
+.login-form h3{
+    text-align: center;
+    margin-bottom: 5%;
+    color:#fff;
+}
+.login-form h5{
+    text-align: center;
+    margin-bottom: 5%;
+    color:#fff;
+}
+.btnSubmit{
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: rgb(114, 114, 114);
+    border: none;
+    border-radius: 10px;
+    padding:2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btnForgetPwd:hover{
+    text-decoration:underline;
+    color:#fff;
+}
