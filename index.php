@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="lib/charts/Chart.min.css">
   <link href="css/login.css" rel="stylesheet"/>
   <link href="css/general.css" rel="stylesheet"/>
+  <link href="css/accordion.css" rel="stylesheet"/>
   <link rel="shortcut icon" type="image/png" href="img/sv.png" />
   <link href="css/simple-sidebar.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

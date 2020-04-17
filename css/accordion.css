@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.faq {
+    width: 100%;
+    border: 1px solid #111111;
+}
+
+.title-tab {
+    padding: 16px 8px;
+    background-color: #7d7d80;
+    color: rgb(250, 249, 249);
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.title-tab i {
+    margin: 8px;
+}
+
+.content-tab {
+    padding: 32px 8px;
+}
+
+.d-none {
+    display: none;
+}

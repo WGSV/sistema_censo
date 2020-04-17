@@ -1,49 +1,29 @@
 <h1 style="text-align: center;">Preguntas Frecuentes</h1>
 
-<div class="row" style="margin: 10%">
-    <div class="accordion" id="accordionFAQ">
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#QuestionOne" aria-expanded="true" aria-controls="QuestionOne">
-                        Pregunta #1
-                    </button>
-                </h2>
-            </div>
-
-            <div id="QuestionOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#QuestionTwo" aria-expanded="false" aria-controls="QuestionTwo">
-                        Pregunta #2
-                    </button>
-                </h2>
-            </div>
-            <div id="QuestionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#QuestionThree" aria-expanded="false" aria-controls="QuestionThree">
-                        Pregunta #3
-                    </button>
-                </h2>
-            </div>
-            <div id="QuestionThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-            </div>
-        </div>
+<div class="row" style="margin: 5%">
+    <div class="faq">
+        <div class="title-tab"><i class="fa fa-1x"></i>Pregunta frecuente 1</div>
+        <div class="content-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ut eligendi nisi cum obcaecati beatae.</div>
+        <div class="title-tab"><i class="fa fa-1x"></i>Pregunta frecuente 2</div>
+        <div class="content-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corrupti aspernatur necessitatibus veniam, animi dolor!</div>
+        <div class="title-tab"><i class="fa fa-1x"></i>Pregunta frecuente 3</div>
+        <div class="content-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est praesentium ipsa enim, culpa facilis sunt!</div>
+        <div class="title-tab"><i class="fa fa-1x"></i>Pregunta frecuente 4</div>
+        <div class="content-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aspernatur, explicabo dolores, beatae tenetur sunt.</div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $(".content-tab:not(:eq(0))").toggle();
+        $(".title-tab i").toggleClass("fa-plus");
+
+        $(".title-tab").click(function() {
+            $(".content-tab").hide();
+            $(".title-tab i").removeClass("fa-minus");
+            $(".title-tab i").addClass("fa-plus");
+            $(this).next().show();
+            $(this).children().addClass("fa-minus");
+        })
+    })
+</script>
