@@ -9,6 +9,7 @@
   <title>Censo</title>
 
   <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="lib/charts/Chart.min.css">
   <link href="css/login.css" rel="stylesheet"/>
   <link href="css/general.css" rel="stylesheet"/>
   <link rel="shortcut icon" type="image/png" href="img/sv.png" />
@@ -79,7 +80,9 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/charts/Chart.bundle.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <!-- Scripts -->
     <script>
     //incial
@@ -115,6 +118,12 @@
       $("#btEstadisticas0").click(function(e)
       {
         $("#loader").load("estadisticas.php");
+      });
+
+      //preguntas frecuentes
+      $("#btFAQ").click(function(e)
+      {
+        $("#loader").load("preguntasFrecuentes.php");
       });
 
       //censo
