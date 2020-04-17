@@ -1,4 +1,4 @@
-.login-container{
+.login-container {
     padding-top: 4%;
     padding-left: 5px;
     padding-right: 5px;
@@ -6,13 +6,14 @@
     height: auto;
 }
 
-img{
+.img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 75px;
     height: 75px;
 }
+
 .fa {
     color: ivory;
     padding: 5px;
@@ -21,42 +22,47 @@ img{
 .flex-container {
     display: flex;
     justify-content: center;
-  }
-  
-.login-form{
+}
+
+.login-form {
     padding: 9%;
-    background:#282726;
+    background: #282726;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
 }
-.login-form h3{
+
+.login-form h3 {
     text-align: center;
     margin-bottom: 5%;
-    color:#fff;
+    color: #fff;
 }
-.login-form h5{
+
+.login-form h5 {
     text-align: center;
     margin-bottom: 5%;
-    color:#fff;
+    color: #fff;
 }
-.btnSubmit{
+
+.btnSubmit {
     font-weight: 600;
     width: 50%;
     color: #282726;
     background-color: rgb(114, 114, 114);
     border: none;
     border-radius: 10px;
-    padding:2%;
+    padding: 2%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.btnForgetPwd{
+
+.btnForgetPwd {
     color: #fff;
     font-weight: 600;
     text-decoration: none;
 }
-.btnForgetPwd:hover{
-    text-decoration:underline;
-    color:#fff;
+
+.btnForgetPwd:hover {
+    text-decoration: underline;
+    color: #fff;
 }

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col login-form">               
                 <div class="form-group">
-                    <img src="img/sv.png"/>
+                    <img class="img" src="img/sv.png"/>
                 </div>
                 <h3>Iniciar sesión</h3>
                 <div class="form-group">
