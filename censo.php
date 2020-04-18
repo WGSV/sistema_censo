@@ -144,31 +144,68 @@
         </div>
       </div>
     </div>
-    <h4>Situación actual</h4> <button style="border-radius: 100px; height:20px">i</button>
-
-
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</form>
+    <div class="row">
+      <h4>Situación actual</h4> <button style="border-radius: 100px; height:20px">i</button>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+          <label for="genero_formulario">Frecuencia con la que sale del hogar</label>
+          <select class="form-control" id="genero_formulario">
+            <option>Una vez cada 2 días</option>
+            <option>Una vez al día</option>
+            <option>Más de una vez al día</option>
+            <option>Una o dos veces a la semana</option>
+          </select>
+      </div>
+      <div class="col-lg-6 col-md-6">
+          <label for="contacto_formulario">Motivo para salir del hogar</label>
+          <br>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="">Trabajo</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="">Compra de viveres</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="">Compra de productos personales</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="">Pasear mascotas</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="">Otra</label>
+        </div>
+      </div>
+    </div>
+    <label for="municipio_forumulario">Especifique otro motivo</label>
+    <input type="name" class="form-control" id="municipio_formulario" placeholder="">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+          <label for="genero_formulario">¿Otra persona realiza estas tareas tambien?</label>
+          <select class="form-control" id="genero_formulario">
+            <option>Si</option>
+            <option>No</option>
+          </select>
+      </div>
+      <div class="col-lg-6 col-md-6">
+          <label for="genero_formulario">¿Qué tan amenudo cambian de designado?</label>
+          <select class="form-control" id="genero_formulario">
+            <option>diariamente</option>
+            <option>cuando es necesario</option>
+            <option>no es frecuente</option>
+          </select>
+      </div> 
+    </div>
+    <div>
+          <label for="genero_formulario">¿Cuales lugares frecuentan más?</label>
+          <select class="form-control" id="genero_formulario">
+            <option>Supermercados</option>
+            <option>Tiendas cercanas</option>
+            <option>Bancos</option>
+          </select>
+    </div>
